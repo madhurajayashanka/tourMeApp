@@ -1,7 +1,7 @@
 {
   "env": {
-    "MONGO_ATLAS_PW": "iW6dQblFnqLFlxu7",
-    "MONGO_ATLAS_USERNAME": "admin",
+    "MONGO_ATLAS_PW": "",
+    "MONGO_ATLAS_USERNAME": "",
     "JWT_KEY":"SECRET_MESSAGE"
   }
 }
