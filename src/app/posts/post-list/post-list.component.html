@@ -1,0 +1,23 @@
+
+<div class="outer row">
+  <div class="col-sm-12 col-md-6 col-lg-6" *ngFor="let post of posts;">
+    <span class="space"></span>
+    <mat-card *ngIf="searchText ==='' || post.title.toLowerCase().includes(searchText) || post.content.toLowerCase().includes(searchText)||post.location.toLowerCase().includes(searchText)">
+
+      <h2>{{post.title}}<br> <small class="location">({{post.location}})</small></h2>
+      <div class="post-image">
+        <img src={{post.imageUrl}}  alt="">
+      </div>
+      <p>{{post.content}}</p>
+
+      <mat-action-row *ngIf="userIsAuthenticated && userId===post.creator">
+        <button (click)="onDelete(post['_id'])" mat-button color="warn" >DELETE</button>
+        <a mat-button [routerLink]="['/edit',post['_id']]"  color="primary" > EDIT </a>
+      </mat-action-row>
+    </mat-card>
+
+  </div>
+</div>
+
+
+<p class="info-text mat-body-1" *ngIf="posts.length <=0 && !isLoading">No posts added yet!</p>

@@ -1,0 +1,25 @@
+.space{
+  padding: 100px;
+}
+mat-card{
+  background-color: #FCF8E8;
+}
+.info-text{
+  text-align: center;
+}
+.location{
+  font-weight: normal;
+}
+.post-image{
+  width: 100%;
+  padding-bottom: 10px;
+}
+.post-image img{
+  width: 100%;
+  box-shadow: 1px 1px 5px rgb(0,0,0,0.5);
+}
+mat-action-row{
+  display: flex;
+  flex-direction: row-reverse;
+}
+

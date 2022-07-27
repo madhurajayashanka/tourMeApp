@@ -1,0 +1,33 @@
+<form [formGroup]="postForm">
+  <mat-form-field class="example-full-width" appearance="standard">
+    <mat-label>Title</mat-label>
+    <input type="text" formControlName="title" matInput placeholder="A Journey to Ella" >
+    <mat-error *ngIf="postForm.get('title').invalid">Please enter a post title.</mat-error>
+  </mat-form-field>
+  <br>
+  <mat-form-field class="example-full-width" appearance="standard">
+    <mat-label>Location</mat-label>
+    <input type="text" formControlName="location"  matInput >
+    <mat-error *ngIf="postForm.get('location').invalid">Please enter a location.</mat-error>
+  </mat-form-field>
+
+  <br>
+  <mat-form-field class="example-full-width" appearance="standard">
+    <mat-label>Image Url</mat-label>
+    <input type="text" formControlName="imageUrl"  matInput >
+    <mat-error *ngIf="postForm.get('imageUrl').invalid">Please enter a image url.</mat-error>
+  </mat-form-field>
+  <br>
+  <mat-form-field class="example-full-width" appearance="outline">
+    <mat-label>Story</mat-label>
+    <textarea type="text" formControlName="content"  rows="10" matInput></textarea>
+    <mat-error *ngIf="postForm.get('content').invalid">Please enter a post story.</mat-error>
+  </mat-form-field>
+  <br>
+
+
+
+  <button (click)="onSavePost()" [disabled]="postForm.invalid" type="submit" mat-fab color="warn">
+    <mat-icon>add</mat-icon>
+  </button>
+</form>

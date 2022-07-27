@@ -1,0 +1,21 @@
+<form [formGroup]="loginForm">
+  <div class="outer">
+    <mat-form-field appearance="outline">
+      <mat-label>Enter your email</mat-label>
+      <input  formControlName="email" type="email" matInput placeholder="pat@example.com">
+    </mat-form-field>
+    <br>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Password</mat-label>
+      <input formControlName="password"  type="password" matInput >
+    </mat-form-field>
+    <br>
+    <br>
+  </div>
+  <mat-action-row>
+    <button (click)="onLogin()" [disabled]="loginForm.invalid" mat-raised-button type="submit" mat-button color="primary">Login</button>
+    <span class="spacer"></span>
+    <li><a routerLinkActive="mat-accent" mat-button color="primary" routerLink="../signup">Haven't Sign up? Sign Up</a></li>
+  </mat-action-row>
+</form>
