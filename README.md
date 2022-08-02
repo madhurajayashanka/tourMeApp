@@ -3,5 +3,6 @@ I made a small web app called "Tour Me" to post our journeys and trips. (Somethi
 
 I have used Angular for Frontend, NodeJs with ExpressJs for the Backend, and MongoDB for the database. and for the authentication parts have used Jason Web tokens (JWT) With an auto expiration time of 1 hour. (Planning to add more features)
 
+![Tour Me](https://github.com/madhurajayashanka/tourMeApp/blob/master/AngularNodeJsTourMeWebApp.png?raw=true)
 
 #frontend #nodejs #share #like #github #database #planning #angular #expressjs #mongodb #jwt  #fullstackdevelopment  
