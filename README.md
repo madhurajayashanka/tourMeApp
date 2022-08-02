@@ -1,27 +1,7 @@
-# TourMeApp
+I made a small web app called "Tour Me" to post our journeys and trips. (Something like a small blog). Anyone can look at the posts even if they aren't registered on the site. If someone wants to share their own posts they have to make an account by registering. If someone posted a post on the site that specific post only can be edited(updated) or deleted by themselves(Authorization enabled). and last but not least I am planning to add more features 😀
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.4.
 
-## Development server
+I have used Angular for Frontend, NodeJs with ExpressJs for the Backend, and MongoDB for the database. and for the authentication parts have used Jason Web tokens (JWT) With an auto expiration time of 1 hour. (Planning to add more features)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+#frontend #nodejs #share #like #github #database #planning #angular #expressjs #mongodb #jwt  #fullstackdevelopment  
